@@ -27,9 +27,9 @@ public class BookingController {
         return ResponseEntity.ok(bookingService.createBooking(booking));
     }
 
-    //    @PostMapping("/book")
-//    public String createNewBooking(){
-//        System.out.println("Create booking called from user service, Inside Booking Service");
-//        return "Create booking called from user service, Inside Booking Service";
-//    }
+    @PostMapping("/book")
+    public String createNewBooking(){
+        System.out.println("Create booking called from user service, Inside Booking Service");
+        return "Create booking called from user service, Inside Booking Service";
+    }
 }
